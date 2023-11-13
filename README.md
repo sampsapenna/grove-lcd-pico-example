@@ -11,7 +11,7 @@ way to set up the LCD using the Pico SDK port of Grove RGB LCD library.
 Repository contains `pico sdk` and `grove-lcd-pico` as submodules. Before
 compiling run
 ```bash
-git submodule init && git submodule update --recursive
+git submodule update --init && git submodule foreach "git submodule update --init"
 ```
 
 ## Usage
